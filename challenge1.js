@@ -19,7 +19,7 @@ printName();
 function printAge(bYear) {
   console.log(2023 - bYear);
 }
-printAge(1990);
+printAge(1992);
 /**
  * Task 3:
  * Create a function named `printHello`
@@ -30,13 +30,29 @@ printAge(1990);
  * -- fr: it should print `Bonjour NAME`
  * -- tr: it should print `Merhaba NAME`
  */
-// function printHello(name, language){
-
-//     if
-// }
+function printHello(name, language) {
+  if (language == "en") {
+    console.log(`Hello ${name}`);
+  } else if (language == "es") {
+    console.log(`Hola ${name}`);
+  } else if (language == "fr") {
+    console.log(`Bonjour ${name}`);
+  } else if (language == "tr") {
+    console.log(`Merhaba ${name}`);
+  }
+}
+printHello("noura", "tr");
 /**
  * Task 4:
  * Create a function named `printMax`
  * - that takes 2 parameters as numbers
  * - should print out the bigger number
  */
+function printMax(n1, n2) {
+  if (n1 > n2) {
+    return n1;
+  } else {
+    return n2;
+  }
+}
+console.log(printMax(70, 60));
